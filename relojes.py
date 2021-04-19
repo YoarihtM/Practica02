@@ -1,6 +1,6 @@
 import random, time
 
-class reloj:
+class Reloj:
     __segs = random.randint(0, 59)
     __mins = random.randint(0, 59)
     __hrs = random.randint(0, 23)

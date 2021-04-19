@@ -1,39 +1,36 @@
-import relojes 
+import relojes, threading
 from tkinter import *
 
-class GUI:
-    def __init__(self, nPractica):
-        self.tamVentana = '750x450'
-        self.titulo = 'Practica ' + str(nPractica)
-        self.cambiarTamaño = False
+# class GUI:
+#     def __init__(self, nPractica):
+#         self.tamVentana = '750x450'
+#         self.titulo = 'Practica ' + str(nPractica)
+#         self.cambiarTamaño = False
 
-    def cargarVentana(self):
-        ventana = Tk()
-        self.ventana = ventana
-        ventana.title(self.titulo)
-        ventana.geometry(self.tamVentana)
+#     def cargarVentana(self):
+#         ventana = Tk()
+#         self.ventana = ventana
+#         ventana.title(self.titulo)
+#         ventana.geometry(self.tamVentana)
         
-        if self.cambiarTamaño:
-            ventana.resizable(1,1)
-        else:
-            ventana.resizable(0,0)
+#         if self.cambiarTamaño:
+#             ventana.resizable(1,1)
+#         else:
+#             ventana.resizable(0,0)
 
-        texto = Label(ventana, text='')
-        texto.pack()
+#     def setTexto(self, texto):
+#         text = Label(self.ventana, text=texto)
+#         text.pack()
 
-        texto1 = Label(ventana, text='')
-        texto1.pack()
+#     def iniciarVentana(self):
+#         self.ventana.mainloop()
 
-        texto2 = Label(ventana, text='')
-        texto2.pack()
+# v1 = GUI(2)
 
-        texto3 = Label(ventana, text='')
-        texto3.pack()
+# r1 = relojes.Reloj()
 
-    def iniciarVentana(self):
-        self.ventana.mainloop()
+# v1.cargarVentana()
+# v1.setTexto(r1.iniciarReloj())
 
-v1 = GUI(2)
+# v1.iniciarVentana()
 
-v1.cargarVentana()
-v1.iniciarVentana()
